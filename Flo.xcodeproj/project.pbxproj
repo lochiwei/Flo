@@ -12,7 +12,42 @@
 		1AA896EC2117EC9900BD9BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896EA2117EC9900BD9BE3 /* Main.storyboard */; };
 		1AA896EE2117ECA500BD9BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896ED2117ECA500BD9BE3 /* Assets.xcassets */; };
 		1AA896F12117ECA500BD9BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA896EF2117ECA500BD9BE3 /* LaunchScreen.storyboard */; };
+		1AA896FE2117EE8600BD9BE3 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA896FD2117EE8100BD9BE3 /* Extensions.framework */; };
+		1AA896FF2117EE8600BD9BE3 /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA896FD2117EE8100BD9BE3 /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AA897042117EEC800BD9BE3 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA897032117EEC800BD9BE3 /* PushButton.swift */; };
+		1AA89708211876C400BD9BE3 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA89707211876C400BD9BE3 /* CounterView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AA896FC2117EE8100BD9BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA896F82117EE8100BD9BE3 /* Extensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1AAC139C210C9CD3004E320A;
+			remoteInfo = Extensions;
+		};
+		1AA897002117EE8600BD9BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AA896F82117EE8100BD9BE3 /* Extensions.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAC139B210C9CD3004E320A;
+			remoteInfo = Extensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AA897022117EE8600BD9BE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AA896FF2117EE8600BD9BE3 /* Extensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AA896E32117EC9900BD9BE3 /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +57,9 @@
 		1AA896ED2117ECA500BD9BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA896F02117ECA500BD9BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AA896F22117ECA500BD9BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AA896F82117EE8100BD9BE3 /* Extensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Extensions.xcodeproj; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/iOS Dev/Frameworks/Extensions/Extensions.xcodeproj"; sourceTree = "<group>"; };
+		1AA897032117EEC800BD9BE3 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		1AA89707211876C400BD9BE3 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA896FE2117EE8600BD9BE3 /* Extensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +77,7 @@
 		1AA896DA2117EC9800BD9BE3 = {
 			isa = PBXGroup;
 			children = (
+				1AA896F82117EE8100BD9BE3 /* Extensions.xcodeproj */,
 				1AA896E52117EC9900BD9BE3 /* Flo */,
 				1AA896E42117EC9900BD9BE3 /* Products */,
 			);
@@ -56,12 +96,22 @@
 			children = (
 				1AA896E62117EC9900BD9BE3 /* AppDelegate.swift */,
 				1AA896E82117EC9900BD9BE3 /* ViewController.swift */,
+				1AA897032117EEC800BD9BE3 /* PushButton.swift */,
+				1AA89707211876C400BD9BE3 /* CounterView.swift */,
 				1AA896EA2117EC9900BD9BE3 /* Main.storyboard */,
 				1AA896ED2117ECA500BD9BE3 /* Assets.xcassets */,
 				1AA896EF2117ECA500BD9BE3 /* LaunchScreen.storyboard */,
 				1AA896F22117ECA500BD9BE3 /* Info.plist */,
 			);
 			path = Flo;
+			sourceTree = "<group>";
+		};
+		1AA896F92117EE8100BD9BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AA896FD2117EE8100BD9BE3 /* Extensions.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +124,12 @@
 				1AA896DF2117EC9800BD9BE3 /* Sources */,
 				1AA896E02117EC9800BD9BE3 /* Frameworks */,
 				1AA896E12117EC9800BD9BE3 /* Resources */,
+				1AA897022117EE8600BD9BE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1AA897012117EE8600BD9BE3 /* PBXTargetDependency */,
 			);
 			name = Flo;
 			productName = Flo;
@@ -110,12 +162,28 @@
 			mainGroup = 1AA896DA2117EC9800BD9BE3;
 			productRefGroup = 1AA896E42117EC9900BD9BE3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1AA896F92117EE8100BD9BE3 /* Products */;
+					ProjectRef = 1AA896F82117EE8100BD9BE3 /* Extensions.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1AA896E22117EC9800BD9BE3 /* Flo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1AA896FD2117EE8100BD9BE3 /* Extensions.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Extensions.framework;
+			remoteRef = 1AA896FC2117EE8100BD9BE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1AA896E12117EC9800BD9BE3 /* Resources */ = {
@@ -137,10 +205,20 @@
 			files = (
 				1AA896E92117EC9900BD9BE3 /* ViewController.swift in Sources */,
 				1AA896E72117EC9900BD9BE3 /* AppDelegate.swift in Sources */,
+				1AA897042117EEC800BD9BE3 /* PushButton.swift in Sources */,
+				1AA89708211876C400BD9BE3 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AA897012117EE8600BD9BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Extensions;
+			targetProxy = 1AA897002117EE8600BD9BE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1AA896EA2117EC9900BD9BE3 /* Main.storyboard */ = {
@@ -279,6 +357,7 @@
 		1AA896F62117ECA500BD9BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37W4K5Y2Y5;
@@ -297,6 +376,7 @@
 		1AA896F72117ECA500BD9BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37W4K5Y2Y5;
